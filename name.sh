@@ -14,7 +14,7 @@ if [[ $data1 == $data2 ]]; then
     else
         pid=$(ps -ef | grep $APP_NAME | grep -v grep | awk '{print $2}')
         kill -9 $pid
-        wget -O scripts.zip https://gh.api.99988866.xyz/https://github.com/way-zer/ScriptAgent4MindustryExt/releases/download/v${data3}/ScriptAgent4Mindustry-${data3}-scripts.zip
+        wget -O scripts.zip https://github.com/way-zer/ScriptAgent4MindustryExt/releases/download/v${data3}/ScriptAgent4Mindustry-${data3}-scripts.zip
         rm -f bb4
         mv bb3 bb4
         mv config/scripts/data /be6/data
@@ -30,13 +30,13 @@ else
     rm -f bb2
     mv bb1 bb2
     rm -f server.jar
-    wget -O server.jar https://gh.api.99988866.xyz/https://github.com/Anuken/Mindustry/releases/download/v${data1}/server-release.jar
+    wget -O server.jar https://github.com/Anuken/Mindustry/releases/download/v${data1}/server-release.jar
     if [[ $data3 == $data4 ]]; then
     java -jar server.jar &
     else
         pid=$(ps -ef | grep $APP_NAME | grep -v grep | awk '{print $2}')
         kill -9 $pid
-        wget -O scripts.zip https://gh.api.99988866.xyz/https://github.com/way-zer/ScriptAgent4MindustryExt/releases/download/v${data3}/ScriptAgent4Mindustry-${data3}-scripts.zip
+        wget -O scripts.zip https://github.com/way-zer/ScriptAgent4MindustryExt/releases/download/v${data3}/ScriptAgent4Mindustry-${data3}-scripts.zip
         rm -f bb4
         mv bb3 bb4
         mv config/scripts/data /be6/data
