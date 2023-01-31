@@ -43,7 +43,7 @@ if [[ $data1 == $data2 ]]; then
         echo -e "\033[36mhttps://github.com/way-zer/ScriptAgent4MindustryExt\033[0m"
         jar=$(curl https://api.github.com/repos/way-zer/ScriptAgent4MindustryExt/releases/latest 2>/dev/null | grep -E '"browser_download_url": ".*+jar"' | sed 's/^.*"browser_download_url": "//g' | sed 's/"//g')
         wget -O wayzer.jar $jar
-        wget -O scripts.zip https://gh.api.99988866.xyz/https://github.com/way-zer/ScriptAgent4MindustryExt/releases/download/v${data3}/ScriptAgent4Mindustry-${data3}-scripts.zip
+        wget -O scripts.zip https://github.com/way-zer/ScriptAgent4MindustryExt/releases/download/v${data3}/ScriptAgent4Mindustry-${data3}-scripts.zip
         echo -e "………\033[36m删除旧配置中\033[0m………"
         rm -f bb4
         rm -f config/mods/wayzer.jar
@@ -65,7 +65,7 @@ else
     rm -f bb2
     mv bb1 bb2
     rm -f server.jar
-    wget -O server.jar https://gh.api.99988866.xyz/https://github.com/Anuken/Mindustry/releases/download/v${data1}/server-release.jar
+    wget -O server.jar https://github.com/Anuken/Mindustry/releases/download/v${data1}/server-release.jar
     if [[ $data3 == $data4 ]]; then
         echo -e "………\033[36m插件没有更新\033[0m………"
         java -jar server.jar &
@@ -78,7 +78,7 @@ else
         echo -e "\033[36mhttps://github.com/way-zer/ScriptAgent4MindustryExt\033[0m"
         jar=$(curl https://api.github.com/repos/way-zer/ScriptAgent4MindustryExt/releases/latest 2>/dev/null | grep -E '"browser_download_url": ".*+jar"' | sed 's/^.*"browser_download_url": "//g' | sed 's/"//g')
         wget -O wayzer.jar $jar
-        wget -O scripts.zip https://gh.api.99988866.xyz/https://github.com/way-zer/ScriptAgent4MindustryExt/releases/download/v${data3}/ScriptAgent4Mindustry-${data3}-scripts.zip
+        wget -O scripts.zip https://github.com/way-zer/ScriptAgent4MindustryExt/releases/download/v${data3}/ScriptAgent4Mindustry-${data3}-scripts.zip
         echo -e "………\033[36m删除旧配置中\033[0m………"
         rm -f bb4
         rm -f config/mods/wayzer.jar
